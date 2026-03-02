@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creator Application — HULkreate</title>
+    <meta name="description"
+        content="Apply to join HULkreate, the elite beauty influencer program. Tell us about your digital footprint and creative vision." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- ===== Navbar ===== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/hul-logo.png" alt="HUL Logo" class="logo-img" />
+                HUL<span style="color:var(--purple-light)">kreate</span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="index.html#program">Creators</a>
+                <a href="index.html#benefits">Campaigns</a>
+                <a href="index.html#faq">About</a>
+            </div>
+
+            <div class="nav-right">
+                <a href="#" class="btn btn-primary"
+                    style="background: #dc2626; box-shadow: 0 4px 20px rgba(220,38,38,.35);">Log In</a>
+                <div class="nav-avatar"></div>
+                <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== Page Header ===== -->
+    <header class="page-header">
+        <div class="container">
+            <span class="page-badge">✦ Join the Elite</span>
+            <h1>Creator Application</h1>
+            <p>Tell us about your digital footprint. We're looking for authentic voices and creative minds to partner
+                with global brands.</p>
+        </div>
+    </header>
+
+    <!-- ===== Form ===== -->
+    <section class="form-section">
+        <div class="container">
+            <div class="form-card">
+                <form id="applicationForm" action="received.html" method="GET">
+                    <div class="form-grid">
+                        <!-- Full Name -->
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="label-icon">👤</span> Full Name
+                            </label>
+                            <input type="text" class="form-input" id="fullName" name="fullName" placeholder="John Doe"
+                                required />
+                        </div>
+
+                        <!-- Instagram Handle -->
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="label-icon">📸</span> Instagram Handle
+                            </label>
+                            <input type="text" class="form-input" id="instagram" name="instagram"
+                                placeholder="@ yourusername" required />
+                        </div>
+
+                        <!-- Follower Count -->
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="label-icon">👥</span> Follower Count
+                            </label>
+                            <select class="form-select" id="followers" name="followers" required>
+                                <option value="" disabled selected>Select range</option>
+                                <option value="1k-5k">1K – 5K</option>
+                                <option value="5k-10k">5K – 10K</option>
+                                <option value="10k-50k">10K – 50K</option>
+                                <option value="50k-100k">50K – 100K</option>
+                                <option value="100k+">100K+</option>
+                            </select>
+                        </div>
+
+                        <!-- Content Niche -->
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="label-icon">🎨</span> Content Niche
+                            </label>
+                            <select class="form-select" id="niche" name="niche" required>
+                                <option value="" disabled selected>Select category</option>
+                                <option value="skincare">Skincare</option>
+                                <option value="makeup">Makeup</option>
+                                <option value="haircare">Haircare</option>
+                                <option value="wellness">Wellness</option>
+                                <option value="lifestyle">Lifestyle</option>
+                                <option value="fashion">Fashion</option>
+                            </select>
+                        </div>
+
+                        <!-- Link to Top Post -->
+                        <div class="form-group full-width">
+                            <label class="form-label">
+                                <span class="label-icon">🔗</span> Link to Top Post
+                            </label>
+                            <input type="url" class="form-input" id="topPost" name="topPost"
+                                placeholder="https://www.instagram.com/p/..." />
+                        </div>
+                    </div>
+
+                    <!-- Notice -->
+                    <div class="form-notice">
+                        <span class="notice-icon">ℹ</span>
+                        <p>By submitting this form, you agree to HULkreate's Terms of Service and Privacy Policy. Our
+                            team will review your profile and reach out within 3-5 business days.</p>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        Submit Application &nbsp;➤
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Info Cards ===== -->
+    <section class="container">
+        <div class="info-cards">
+            <div class="info-card">
+                <div class="card-icon">💎</div>
+                <h3>Premium Brands</h3>
+                <p>Work with Fortune 500 companies and high-growth startups.</p>
+            </div>
+            <div class="info-card">
+                <div class="card-icon">📷</div>
+                <h3>Fair Compensation</h3>
+                <p>Transparent pricing and automated payments for your hard work.</p>
+            </div>
+            <div class="info-card">
+                <div class="card-icon">📈</div>
+                <h3>Growth Tools</h3>
+                <p>Access exclusive analytics and creator growth workshops.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 HULkreate Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
